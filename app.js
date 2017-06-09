@@ -124,5 +124,6 @@ function multiplyArray(testArray){ //eslint-disable-line
 
 // Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyArray(2,3,4);
+// I forgot to create a new branch before starting problem 5, so I'm adding a comment line so I can submit.
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
