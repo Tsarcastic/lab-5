@@ -51,7 +51,7 @@ Fourth element: "The product of 4 and 7 and 5 is 140."
 IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this function. To do addition, use your sum() function, and to do multiplication, use your multiply() function that you've already created. You're going to have to be resourceful to figure out how to do this.
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
-// TODO: Write your code here
+// TODO: DONE
 function sumAndMultiply(a,b,c){ //eslint-disable-line
   var sum1 = sum(a,b)[0];
   var sum2 = sum(sum1,c)[0];
@@ -67,7 +67,7 @@ function sumAndMultiply(a,b,c){ //eslint-disable-line
   return mSumRay;
 }
 
-// TODO: Here is the test for sumAndMultiply(); uncomment it to run it
+// TODO: DONE
 testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
@@ -79,15 +79,24 @@ Write a function called sumArray() that takes in an array of numbers as its sing
 IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To do addition, use your sum() function that you've already created. You're going to have to be resourceful to figure out how to do this.
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
-// TODO: Write your code here
+// TODO: DONE
 var testArray = [2,3,4]; //eslint-disable-line
 
 function sumArray(testArray){ //eslint-disable-line
-
+  var rayRay = new Array();
+  var first = testArray[0];
+  var second = testArray[1];
+  var third = testArray[2];
+  var sum1 = sum(testArray[0],testArray[1])[0];
+  var sum2 = sum(sum1,testArray[2])[0];
+  rayRay.push(sum2);
+  var rayTalk = testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' was passed in as an array of numbers, and ' + sum2 + ' is their sum.';
+  rayRay.push(rayTalk);
+  return rayRay;
 }
 
-// TODO: Here is the test for sumArray(); uncomment it to run it
-// testSumArray(testArray);
+// TODO: DONE
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
