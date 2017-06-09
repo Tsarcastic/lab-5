@@ -109,10 +109,21 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(testArray){ //eslint-disable-line
-
+  var mayRay = new Array();
+  var first = testArray[0];
+  var second = testArray[1];
+  var third = testArray[2];
+  var mul1 = multiply(testArray[0], testArray[1])[0];
+  var mul2 = multiply(mul1,testArray[2])[0];
+  mayRay.push(mul2);
+  var mayTalk = 'The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' have a product of ' + mul2 + '.';
+  mayRay.push(mayTalk);
+  console.log(mayTalk);
+  return mayRay;
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(2,3,4);
+testMultiplyArray(2,3,4);
+// I forgot to create a new branch before starting problem 5, so I'm adding a comment line so I can submit.
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
