@@ -87,10 +87,10 @@ function sumArray(testArray){ //eslint-disable-line
   var first = testArray[0];
   var second = testArray[1];
   var third = testArray[2];
-  var sum1 = sum(testArray[0],testArray[1])[0];
-  var sum2 = sum(sum1,testArray[2])[0];
+  var sum1 = sum(first,second)[0];
+  var sum2 = sum(sum1,third)[0];
   rayRay.push(sum2);
-  var rayTalk = testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' was passed in as an array of numbers, and ' + sum2 + ' is their sum.';
+  var rayTalk = first + ',' + second + ',' + third + ' was passed in as an array of numbers, and ' + sum2 + ' is their sum.';
   rayRay.push(rayTalk);
   return rayRay;
 }
@@ -113,12 +113,11 @@ function multiplyArray(testArray){ //eslint-disable-line
   var first = testArray[0];
   var second = testArray[1];
   var third = testArray[2];
-  var mul1 = multiply(testArray[0], testArray[1])[0];
-  var mul2 = multiply(mul1,testArray[2])[0];
+  var mul1 = multiply(first, second)[0];
+  var mul2 = multiply(mul1,third)[0];
   mayRay.push(mul2);
-  var mayTalk = 'The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' have a product of ' + mul2 + '.';
+  var mayTalk = 'The numbers ' + first + ',' + second + ',' + third + ' have a product of ' + mul2 + '.';
   mayRay.push(mayTalk);
-  console.log(mayTalk);
   return mayRay;
 }
 
